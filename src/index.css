@@ -8,35 +8,51 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Literary bookstore color palette */
+    --background: 45 23% 97%;
+    --foreground: 215 25% 14%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 14%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Deep literary blue as primary */
+    --primary: 215 50% 25%;
+    --primary-foreground: 45 23% 97%;
+    --primary-hover: 215 50% 20%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm gold accent */
+    --secondary: 42 87% 55%;
+    --secondary-foreground: 215 25% 14%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Soft cream muted tones */
+    --muted: 42 20% 94%;
+    --muted-foreground: 215 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 42 60% 85%;
+    --accent-foreground: 215 25% 14%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 42 20% 88%;
+    --input: 42 20% 88%;
+    --ring: 215 50% 25%;
 
-    --radius: 0.5rem;
+    /* Literary gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 50% 25%), hsl(215 45% 35%));
+    --gradient-secondary: linear-gradient(135deg, hsl(42 87% 55%), hsl(45 80% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 50% 25%), hsl(42 87% 55%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(42 20% 96%));
+
+    /* Elegant shadows */
+    --shadow-book: 0 10px 30px -5px hsl(215 50% 25% / 0.2);
+    --shadow-card: 0 4px 20px -2px hsl(215 25% 14% / 0.1);
+    --shadow-hover: 0 15px 35px -5px hsl(215 50% 25% / 0.3);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +72,46 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark literary theme */
+    --background: 215 25% 8%;
+    --foreground: 45 23% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 215 20% 12%;
+    --card-foreground: 45 23% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 215 20% 12%;
+    --popover-foreground: 45 23% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 42 87% 55%;
+    --primary-foreground: 215 25% 8%;
+    --primary-hover: 42 87% 50%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 215 30% 18%;
+    --secondary-foreground: 45 23% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 215 20% 15%;
+    --muted-foreground: 215 10% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 215 25% 20%;
+    --accent-foreground: 45 23% 95%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 215 20% 20%;
+    --input: 215 20% 20%;
+    --ring: 42 87% 55%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(42 87% 55%), hsl(45 80% 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(215 30% 18%), hsl(215 25% 25%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 25% 8%), hsl(42 87% 55%));
+    --gradient-card: linear-gradient(145deg, hsl(215 20% 12%), hsl(215 15% 15%));
+
+    /* Dark shadows */
+    --shadow-book: 0 10px 30px -5px hsl(0 0% 0% / 0.5);
+    --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.3);
+    --shadow-hover: 0 15px 35px -5px hsl(0 0% 0% / 0.6);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -101,5 +130,60 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Animation utilities for bookstore */
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.5s ease-out;
+  }
+  
+  .hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-4px);
+  }
+  
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
