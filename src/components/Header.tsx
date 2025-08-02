@@ -2,6 +2,7 @@ import { Search, ShoppingCart, User, Menu, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -61,12 +62,14 @@ export const Header = () => {
                 3
               </Badge>
             </Button>
-            <Button variant="ghost" size="icon" className="relative">
-              <ShoppingCart className="h-5 w-5" />
-              <Badge className="absolute -top-1 -right-1 h-5 w-5 rounded-full p-0 text-xs bg-secondary text-secondary-foreground">
-                2
-              </Badge>
-            </Button>
+            <Link to="/cart">
+              <Button variant="ghost" size="icon" className="relative">
+                <ShoppingCart className="h-5 w-5" />
+                <Badge className="absolute -top-1 -right-1 h-5 w-5 rounded-full p-0 text-xs bg-secondary text-secondary-foreground">
+                  2
+                </Badge>
+              </Button>
+            </Link>
             <Button variant="outline" size="sm" className="hidden md:flex">
               <User className="h-4 w-4 mr-2" />
               Ingia
